@@ -2,6 +2,7 @@ import * as data from "./data";
 import * as reverseCaptcha from "./src/01 - captcha";
 import * as checksum from "./src/02 - checksum";
 import * as memory from "./src/03 - memory";
+import * as passphrase from "./src/04 - passphrase";
 
 //day 1
 console.log(
@@ -33,4 +34,15 @@ console.log(
 console.log(
   "Day 3 (spiral memory) next highest cell value: ",
   memory.firstHigherNumber(data.day03)
+);
+
+// day 4
+console.log(
+  "Day 4 (passphrases) valid count: ",
+  passphrase.validCount(data.day04)
+);
+
+console.log(
+  "Day 4 (passphrases) valid count with anagrams: ",
+  passphrase.validCountWithAnagrams(data.day04)
 );
