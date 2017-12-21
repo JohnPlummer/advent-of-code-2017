@@ -3,6 +3,7 @@ import * as reverseCaptcha from "./src/01 - captcha";
 import * as checksum from "./src/02 - checksum";
 import * as memory from "./src/03 - memory";
 import * as passphrase from "./src/04 - passphrase";
+import * as maze from "./src/05 - maze";
 
 //day 1
 console.log(
@@ -45,4 +46,15 @@ console.log(
 console.log(
   "Day 4 (passphrases) valid count with anagrams: ",
   passphrase.validCountWithAnagrams(data.day04)
+);
+
+// day 5
+console.log(
+  "Day 5 (maze) jump count with increment: ",
+  maze.jumpsWithIncrement(data.day05)
+);
+
+console.log(
+  "Day 5 (maze) jump count with conditional increment: ",
+  maze.jumpsWithConditionalIncrement(data.day05)
 );
