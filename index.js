@@ -4,6 +4,7 @@ import * as checksum from "./src/02 - checksum";
 import * as memory from "./src/03 - memory";
 import * as passphrase from "./src/04 - passphrase";
 import * as maze from "./src/05 - maze";
+import * as reallocation from "./src/06 - reallocation";
 
 //day 1
 console.log(
@@ -57,4 +58,10 @@ console.log(
 console.log(
   "Day 5 (maze) jump count with conditional increment: ",
   maze.jumpsWithConditionalIncrement(data.day05)
+);
+
+// day 6
+console.log(
+  "Day 6 (reallocation) loop found in: ",
+  reallocation.reallocate(data.day06)
 );
